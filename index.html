@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link id="stylesheet" href="assets/css/style.css" rel="stylesheet">
+    <script src="assets/js/p5.min.js"></script>
+    <script src="assets/js/p5.dom.js"></script>
+    <title>Workshop – Resources</title>
+  </head>
+  <body id="homepage">
+    <div id="resources-link" class="">
+      <p><a href="./resources/index.html">Resources 👀</a></p>
+      <p><a target="_blank" href="https://ellenlowing.com">Ellen Lo</a> and <a target="_blank" href="https://hildaw.com">Hilda Wong</a></p>
+    </div>
+    <script type="text/javascript">
+      let font;
+      function preload() {
+        font = loadFont("assets/font/Mabry Pro.otf");
+      }
+      function setup() {
+        createCanvas(windowWidth, windowHeight);
+        textFont(font);
+        textSize(200);
+        textAlign(CENTER, CENTER);
+      }
+      function draw() {
+        background(0);
+        fill(255);
+        let m = month();
+        let d = day();
+        let y = year();
+        text(`${m}/${d}/${y}`, width/2, height/2-100);
+      }
+    </script>
+  </body>
+</html>

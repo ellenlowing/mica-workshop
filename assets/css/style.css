@@ -1,0 +1,40 @@
+@font-face {
+  font-family: mabry;
+  src: url('../font/Mabry Pro.otf');
+}
+
+@font-face {
+  font-family: mabry-italic;
+  src: url('../font/Mabry Pro Italic.otf');
+}
+
+html, body {
+  background-color: #000;
+  color: #fff;
+  font-family: mabry;
+  font-size: 1.2em;
+  margin: 0;
+  padding-left: 0.5em;
+}
+
+a,
+a:active,
+a:hover {
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#homepage {
+  overflow:hidden;
+}
+
+#resources-link {
+  font-size: 2em;
+  position: absolute;
+  top: 60vh;
+  left: 32vw;
+  text-align:center;
+}
