@@ -5,32 +5,73 @@
     <link id="stylesheet" href="assets/css/style.css" rel="stylesheet">
     <script src="assets/js/p5.min.js"></script>
     <script src="assets/js/p5.dom.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.lazy.min.js"></script>
     <title>Workshop – Resources</title>
   </head>
-  <body id="homepage">
-    <div id="resources-link" class="">
-      <p><a href="./resources/index.html">Resources 👀</a></p>
-      <p><a target="_blank" href="https://ellenlowing.com">Ellen Lo</a> and <a target="_blank" href="https://hildaw.com">Hilda Wong</a></p>
+  <body class="info-active">
+    <div class="title">MICA MFAGD WORKSHOP</div>
+    <nav>
+      <a class="nav-btn info-btn">info</a>
+      <a class="nav-btn month-btn">FEB</a>
+      <a class="nav-btn month-btn">MAR</a>
+      <a class="nav-btn month-btn">APR</a>
+      <a class="nav-btn month-btn">MAY</a>
+      <a class="nav-btn month-btn">JUN</a>
+      <a class="nav-btn month-btn">JUL</a>
+      <a class="nav-btn month-btn">AUG</a>
+      <a class="nav-btn month-btn">SEP</a>
+      <a class="nav-btn month-btn">OCT</a>
+      <a class="nav-btn month-btn">NOV</a>
+      <a class="nav-btn month-btn">DEC</a>
+    </nav>
+    <div class="info">
+      <p>
+        This is a code-based design workshop for first year MFA graphic design students at MICA.
+        The workshop aims at introducing <a target="_blank" href="https://p5js.org/">p5.js</a> as a design tool. Over the course of 3 days, the students designed and coded an interactive calendar for the year 2020.
+      </p>
     </div>
-    <script type="text/javascript">
-      let font;
-      function preload() {
-        font = loadFont("assets/font/Mabry Pro.otf");
-      }
-      function setup() {
-        createCanvas(windowWidth, windowHeight);
-        textFont(font);
-        textSize(200);
-        textAlign(CENTER, CENTER);
-      }
-      function draw() {
-        background(0);
-        fill(255);
-        let m = month();
-        let d = day();
-        let y = year();
-        text(`${m}/${d}/${y}`, width/2, height/2-100);
-      }
-    </script>
+
+    <div class="works">
+      <iframe id="theiframe" src="" class="work-iframe"></iframe>
+      <div class="work" id="FEB" data-src="https://editor.p5js.org/charliemichael/embed/r94hT7fN">
+        <p class="work-p">Designed and developed by Charlie Michael</p>
+      </div>
+      <div class="work" id="MAR" data-src="https://editor.p5js.org/spak3678/embed/r2bO1OOd">
+        <p class="work-p">Designed and developed by Sora Pak and Shoshana</p>
+      </div>
+      <div class="work" id="APR" data-src="https://editor.p5js.org/devalladares/embed/rCAR6gjs">
+        <p class="work-p">Designed and developed by Dev and Bella</p>
+      </div>
+      <div class="work" id="MAY" data-src="https://editor.p5js.org/atobin01/embed/10PJIyWk">
+        <p class="work-p">Designed and developed by Ana and Matt</p>
+      </div>
+      <div class="work" id="JUN" data-src="https://editor.p5js.org/chauncey/embed/jhb9WfRY">
+        <p class="work-p">Designed and developed by Sarah and Chauncey</p>
+      </div>
+      <div class="work" id="JUL" data-src="https://editor.p5js.org/achandra/embed/WBWzHg7K">
+        <p class="work-p">Designed and developed by Akshita and Meredith</p>
+      </div>
+      <div class="work" id="AUG" data-src="https://editor.p5js.org/ellenlowing/embed/GDsmWaN5">
+        <p class="work-p">Designed and developed by Jing and Bang</p>
+      </div>
+      <div class="work" id="SEP" data-src="https://editor.p5js.org/tavishi/embed/S9AkfOZj">
+        <p class="work-p">Designed and developed by Tavishi and Ruichao</p>
+      </div>
+      <div class="work" id="OCT" data-src="https://editor.p5js.org/CeliMonroe/embed/-XiTJNIh">
+        <p class="work-p">Designed and developed by Elizabeth and Celi</p>
+      </div>
+      <div class="work" id="NOV" data-src="https://editor.p5js.org/xing/embed/AwKWO8Ob">
+        <p class="work-p">Designed and developed by Decong and Xing</p>
+      </div>
+      <div class="work" id="DEC" data-src="https://editor.p5js.org/monikareddy/embed/g3QgUELS">
+        <p class="work-p">Designed and developed by Soyeon Kwon and Monika Reddy</p>
+      </div>
+    </div>
+    <div class="info footer">
+      <p><a target="_blank" href="ellenlowing.com">Ellen Lo</a> & <a target="_blank" href="hildaw.com">Hilda Wong</a> © 2020</p>
+    </div>
+
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

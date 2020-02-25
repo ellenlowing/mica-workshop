@@ -1,40 +1,137 @@
 @font-face {
-  font-family: mabry;
-  src: url('../font/Mabry Pro.otf');
+  font-family: fakt;
+  src: url('../font/FaktPro-Medium.otf');
 }
 
 @font-face {
-  font-family: mabry-italic;
-  src: url('../font/Mabry Pro Italic.otf');
+  font-family: humanist;
+  src: url('../font/Humanist 521 Ultra Bold BT.ttf');
+}
+
+::selection {
+  color: #00FF04;
 }
 
 html, body {
-  background-color: #000;
-  color: #fff;
-  font-family: mabry;
-  font-size: 1.2em;
+  background-color: #fff;
+  color: #000;
+  font-family: fakt;
   margin: 0;
-  padding-left: 0.5em;
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 2vw;
+  margin: 0 4vw;
 }
 
 a,
-a:active,
-a:hover {
-  color: #fff;
-}
-
-a:hover {
+a:active{
+  color: #000;
   text-decoration: none;
 }
 
-#homepage {
-  overflow:hidden;
+a:hover {
+  color: #00FF04;
+  text-decoration: none;
 }
 
-#resources-link {
-  font-size: 2em;
-  position: absolute;
-  top: 60vh;
-  left: 32vw;
-  text-align:center;
+.title {
+  color: #00FF04;
+  font-family: humanist;
+  font-size: 5.9vw;
+  line-height: 6.2vw;
+  text-align: center;
+  margin-block-start:0;
+  margin-block-end:0;
+  margin: 2vw 0;
+}
+
+nav {
+  display: inline-flex;
+  justify-content: space-between;
+  margin-bottom: 2vw;
+  width: 100%;
+}
+.nav-btn {
+  background-color: clear;
+  border: 2px solid #000;
+  border-radius: 2vw;
+  padding: 0.6vw 1vw 0.2vw;
+}
+.nav-btn:hover {
+  background-color: #00FF04;
+  color: #000;
+  cursor: pointer;
+}
+
+iframe {
+  border-width: 0;
+  width: 1440px;
+  height: 900px;
+  -ms-zoom: 0.82;
+  -moz-transform: scale(0.82);
+  -moz-transform-origin: 0 0;
+  -o-transform: scale(0.82);
+  -o-transform-origin: 0 0;
+  -webkit-transform: scale(0.82);
+  -webkit-transform-origin: 0 0;
+}
+
+.info-active .info {
+  display: block;
+}
+.info {
+  display: none;
+}
+.info-active .works {
+  display: none;
+}
+.info p {
+  width: 50%;
+}
+.work {
+  display: none;
+}
+.work-active.work {
+  display: block;
+}
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 4vw;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 6vw;
+    line-height: 7.7vw;
+    margin: 4vw 0;
+    padding: 0 7.2vw;
+  }
+  .title {
+    font-size: 10vw;
+    line-height: 10.5vw;
+    margin-bottom: 3.3vh;
+  }
+  nav {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 1.3vh;
+    grid-row-gap: 1.8vh;
+    margin-bottom: 3.3vh;
+  }
+  .nav-btn {
+    border-radius: 6vw;
+    padding: 2vw 3vw 1vw;
+    text-align: center;
+  }
+  .info p {
+    width: 100%;
+  }
+  .footer {
+    margin-top: 20vh;
+    position: relative;
+  }
 }
