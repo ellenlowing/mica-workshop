@@ -58,8 +58,8 @@ nav {
 }
 .nav-btn {
   background-color: clear;
-  /* border: 0.14vw solid #000; */
-  border: 2px solid #000;
+  border: 0.14vw solid #000;
+  /* border: 2px solid #000; */
   border-radius: 2vw;
   padding: 0.6vw 1vw 0.2vw;
 }
@@ -136,7 +136,7 @@ iframe {
   }
   .nav-btn {
     border-radius: 6vw;
-    /* border: 0.48vw solid #000; */
+    border: 0.48vw solid #000;
     padding: 2.1vw 3vw 1vw;
     text-align: center;
   }
